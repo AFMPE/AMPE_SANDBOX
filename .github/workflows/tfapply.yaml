@@ -29,6 +29,13 @@ jobs:
               echo "SRC_PATH=AMPE_SWP" >> $GITHUB_ENV
               echo "Finished"
               ;;
+            *"rg"*)
+              echo "Setting TF_KEY and SRC to match rg case"
+              echo "TF_KEY=${{ secrets.AZURE_RG_KEY }}" >> $GITHUB_ENV
+              echo "Making PATH"
+              echo "SRC_PATH=rg" >> $GITHUB_ENV
+              echo "Finished"
+              ;;
             *)
               echo "false"
               exit 1
