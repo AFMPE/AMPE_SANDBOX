@@ -10,9 +10,6 @@ terraform.tfvars
 
 **/.terraform.lock.hcl
 
-#Ignore github actions
-**/.github/workflows/
-
 # Terraform directory
 .terraform/
 terraform.tfstate.d/
