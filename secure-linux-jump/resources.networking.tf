@@ -64,7 +64,7 @@ resource "azurerm_public_ip" "hub-bas-pip" {
 #
 resource "azurerm_virtual_network" "jumpvnet" {
     depends_on = [
-    module.rg
+    module.jump_rg
   ]
   name = local.linux_vnet_name
   resource_group_name = local.linux_rg_name
