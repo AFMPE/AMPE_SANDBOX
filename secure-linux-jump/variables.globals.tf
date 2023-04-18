@@ -20,7 +20,7 @@ variable "org_name" {
 variable "workload_name" {
   description = "A name for the workload."
   type        = string
-  deafult = "linux-vm"
+  default = "linux-vm"
 }
 
 variable "environment" {
