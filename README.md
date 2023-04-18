@@ -25,3 +25,4 @@ A repository for developing and testing new features and workloads in the AMPE.
 | **Workspace**                                     | **Short-Code**                            |
 |:------------------------------------------------  | ----------------------------------------: |
 | AMPE Static Web Page                              | ASWP                                      |
+| Secure Linux JumpBox                              | slj                                       |
