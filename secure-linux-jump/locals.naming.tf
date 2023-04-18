@@ -20,4 +20,5 @@ locals {
   linux_vnet_name = azurenoopsutils_resource_name.linux_vnet.result
   linux_snet_name = azurenoopsutils_resource_name.linux_snet.result
   linux_nsg_name = azurenoopsutils_resource_name.linux_nsg.result
+  linux_nic = azurenoopsutils_resource_name.linuxnic
 }
