@@ -127,15 +127,3 @@ resource "azurenoopsutils_resource_name" "linuxnic" {
   separator     = "-"
 }
 
-# Linux Disk
-resource "azurenoopsutils_resource_name" "linuxdisk" {
-  for_each = var.data_disks
-
-  name          = var.workload_name
-  resource_type = "azurerm_managed_disk"
-  prefixes        = [var.org_name, var.environment,var.workload_name]
-suffixes        = []
-random_length = 5
-clean_input = true
-  separator     = "-"
-}
