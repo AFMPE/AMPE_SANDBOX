@@ -19,7 +19,7 @@ resource "azurerm_subnet" "snet1a" {
   depends_on = [
     azurerm_virtual_network.vnet1
   ]
-  name = local.subnet_1a_name
+  name = "AzureBastionSubnet"
   resource_group_name = local.resource_group_name
   virtual_network_name = local.virtual_net1_name
   address_prefixes = ["10.0.0.0/27"]
