@@ -5,10 +5,19 @@
 #------------------------------------------------------------
 
 locals {
-  resource_group_name = azurenoopsutils_resource_name.rg.result
-  virtual_net1_name = azurenoopsutils_resource_name.vnet1.result
-  subnet_1a_name = "AzureBastionSubnet"
-  nsg1a_name = azurenoopsutils_resource_name.nsg1a.result
-  pip_name = azurenoopsutils_resource_name.pip.result
+
+  # Hub-Bastion Networking Naming
+  hub_rg_name = azurenoopsutils_resource_name.hub_rg.result
+  hub_vnet_name = azurenoopsutils_resource_name.hub_vnet.result
+  hub_bas_name = "AzureBastionSubnet"
+  hub_nsg_name = azurenoopsutils_resource_name.hub_nsg.result
+  hub_bas_pip_name = azurenoopsutils_resource_name.bas-pip.result
   azbas_name = azurenoopsutils_resource_name.azbas.result
+
+  # Linux Naming
+  linux_rg_name = azurenoopsutils_resource_name.linux_rg.result
+  linux_name = azurenoopsutils_resource_name.LinuxJB.result
+  linux_vnet_name = azurenoopsutils_resource_name.linux_vnet.result
+  linux_snet_name = azurenoopsutils_resource_name.linux_snet.result
+  linux_nsg_name = azurenoopsutils_resource_name.linux_nsg.result
 }
