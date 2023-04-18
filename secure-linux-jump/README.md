@@ -10,7 +10,7 @@ This workspace is dedicated to meeting security requirements for a linux vm that
 * No hard-coded credentials
 
 ## Testing Use Case
-
+ 
 | **UseCase*                                     | **Desired State**                            |
 |:------------------------------------------------  | ----------------------------------------: |
 | VM in Hub to Linux JumpBox in Spoke               | Cert-based SSH, KeyVault maintaining private key      |
