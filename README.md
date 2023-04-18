@@ -19,6 +19,10 @@ A repository for developing and testing new features and workloads in the AMPE.
 - Update the GitHub secrets to include the tfstate file **Example** secrets.TF_AMPE_KEY -> AMPE.terraform.tfstate
 - Update the logic in the 'tfplan' and 'tfapply' files to include the workspace directory and shortcode
 
+**Only push to main if:**
+
+* You are generating code in your assigned workspace without deploying Terraform Code to the Azure environment
+
 
 ## Workspaces and Short-Codes:
 
@@ -26,3 +30,4 @@ A repository for developing and testing new features and workloads in the AMPE.
 |:------------------------------------------------  | ----------------------------------------: |
 | AMPE Static Web Page                              | ASWP                                      |
 | Secure Linux JumpBox                              | slj                                       |
+
