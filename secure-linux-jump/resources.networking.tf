@@ -39,3 +39,12 @@ resource "azurerm_network_security_group" "nsg1a" {
 
   tags = var.add_tags
 }
+
+# Public IP
+resource "azurerm_public_ip" "pip" {
+  name = local.pip_name
+  location = var.location
+  resource_group_name = local.resource_group_name
+  allocation_method = "Static"
+  sku = "Standard"
+}
