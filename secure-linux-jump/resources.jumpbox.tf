@@ -32,7 +32,7 @@ resource "azurerm_linux_virtual_machine" "linuxjb" {
   ]
   name = local.linux_name
   resource_group_name = local.linux_rg_name
-  computer_name = "${var.workload}jump"
+  computer_name = "${var.workload_name}jump"
   location = var.location
   size = "Standard_F2"
   admin_username = "adminuser"
