@@ -3,7 +3,7 @@
 
 # Virtual Network
 resource "azurerm_virtual_network" "vnet1" {
-  name = local.virtual_net_name
+  name = local.virtual_net1_name
   resource_group_name = local.resource_group_name
   location = var.location
   address_space = ["10.0.0.0/16"]
