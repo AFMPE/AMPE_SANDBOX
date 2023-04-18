@@ -7,7 +7,7 @@ resource "azurerm_network_interface" "jbnic" {
   ]
   name = local.linux_nic
   location = var.location
-
+  resource_group_name = local.linux_rg_name
   ip_configuration {
     name = "internal"
     subnet_id = azurerm_subnet.linuxsnet.id
