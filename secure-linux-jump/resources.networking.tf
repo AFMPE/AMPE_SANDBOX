@@ -31,6 +31,9 @@ resource "azurerm_subnet" "bastionsnet" {
 
 # Bastion Network Security Group
 resource "azurerm_network_security_group" "hub_nsg" {
+  depends_on = [
+    module.hub_rg
+  ]
   name = local.hub_nsg_name
   location = var.location
   resource_group_name = local.hub_rg_name
@@ -52,6 +55,9 @@ resource "azurerm_network_security_group" "hub_nsg" {
 
 # Public IP
 resource "azurerm_public_ip" "hub-bas-pip" {
+  depends_on = [
+    module.hub_rg
+  ]
   name = local.hub_bas_pip_name
   location = var.location
   resource_group_name = local.hub_rg_name
@@ -87,6 +93,9 @@ resource "azurerm_subnet" "linuxsnet" {
 
 # Linux VM NSG
 resource "azurerm_network_security_group" "linuxnsg" {
+  depends_on = [
+    module.jump_rg
+  ]
   name = local.linux_nsg_name
   location = var.location
   resource_group_name = local.linux_rg_name
