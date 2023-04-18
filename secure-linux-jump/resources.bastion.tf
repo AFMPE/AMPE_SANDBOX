@@ -1,4 +1,5 @@
 # Licensed under the MIT License.
+#
 
 resource "azurerm_bastion_host" "azbas" {
   name = local.azbas_name
