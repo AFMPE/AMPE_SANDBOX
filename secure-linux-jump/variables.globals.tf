@@ -8,17 +8,19 @@
 variable "location" {
   description = "The location/region to keep all your network resources. To get the list of all locations with table format from azure cli, run 'az account list-locations -o table'"
   type        = string
+  default = "eastus"
 }
 
 variable "org_name" {
   description = "A name for the organization. It defaults to anoa."
   type        = string
-  default     = "anoa"
+  default     = "AMPE"
 }
 
 variable "workload_name" {
-  description = "A name for the workload. It defaults to network-artifacts."
+  description = "A name for the workload."
   type        = string
+  default = "linux-vm"
 }
 
 variable "environment" {

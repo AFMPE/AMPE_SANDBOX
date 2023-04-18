@@ -1,4 +1,3 @@
-# Copyright (c) Microsoft Corporation.
 # Licensed under the MIT License.
 
 #------------------------------------------------------------
@@ -10,5 +9,6 @@ locals {
   virtual_net1_name = azurenoopsutils_resource_name.vnet1.result
   subnet_1a_name = azurenoopsutils_resource_name.snet1a.result
   nsg1a_name = azurenoopsutils_resource_name.nsg1a.result
-
+  pip_name = azurenoopsutils_resource_name.pip.result
+  azbas_name = azurenoopsutils_resource_name.azbas.result
 }
