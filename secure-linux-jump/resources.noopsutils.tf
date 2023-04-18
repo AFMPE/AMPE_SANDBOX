@@ -115,3 +115,15 @@ resource "azurenoopsutils_resource_name" "linux_nsg" {
     clean_input = true
     separator     = "-"
 }
+
+# Linux Nic
+resource "azurenoopsutils_resource_name" "linuxnic" {
+  name          = var.workload_name
+  resource_type = "azurerm_network_interface"
+ prefixes        = [var.org_name, var.environment,var.workload_name]
+    suffixes        = []
+    random_length = 5
+    clean_input = true
+  separator     = "-"
+}
+
