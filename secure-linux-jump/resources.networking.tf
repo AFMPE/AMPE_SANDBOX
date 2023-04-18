@@ -17,7 +17,7 @@ resource "azurerm_virtual_network" "vnet1" {
 # Subnet
 resource "azurerm_subnet" "snet1a" {
   depends_on = [
-    azurenoopsutils_resource_name.vnet1
+    azurerm_virtual_network.vnet1
   ]
   name = local.subnet_1a_name
   resource_group_name = local.resource_group_name
