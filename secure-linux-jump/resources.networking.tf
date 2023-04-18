@@ -15,7 +15,7 @@ resource "azurerm_virtual_network" "vnet1" {
 }
 
 # Subnet
-resource "azurerm_subnet" "snet1a" {
+resource "azurerm_subnet" "bastionsnet" {
   depends_on = [
     azurerm_virtual_network.vnet1
   ]

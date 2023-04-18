@@ -20,16 +20,6 @@ resource "azurenoopsutils_resource_name" "vnet1" {
     separator     = "-"
 }
 
-# SubNet 1a NoOpsUtils
-resource "azurenoopsutils_resource_name" "snet1a" {
-    name = "subnet1a"
-    resource_type = "azurerm_subnet"
-    prefixes        = [var.org_name, var.environment,var.workload_name]
-    suffixes        = []
-    random_length = 5
-    clean_input = true
-    separator     = "-"
-}
 
 # SubNet 1a NoOpsUtils
 resource "azurenoopsutils_resource_name" "nsg1a" {
