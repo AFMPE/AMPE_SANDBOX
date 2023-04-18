@@ -36,7 +36,7 @@ resource "azurerm_linux_virtual_machine" "linuxjb" {
   location = var.location
   size = "Standard_F2"
   admin_username = "adminuser"
-  admin_password = "password"
+  admin_password = "P@55W0rd!"
 
   network_interface_ids = [
     azurerm_network_interface.jbnic.id
